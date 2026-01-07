@@ -7,10 +7,12 @@ class Word{
         $this->word = strtoupper($word);
     }
 
-    function getWord() : string
-    { return $this->word; }
-    function setWord($word): void
-    { $this->word = $word; }
+    function getWord() : string{
+        return $this->word;
+    }
+    function setWord($word): void{
+        $this->word = $word;
+    }
 
     function containsChar($char): bool{
         return str_contains($this->word, $char);
